@@ -58,15 +58,14 @@ h1 {
 }
 
 .ani {
--webkit-transition-duration: 1.5s;
+    -webkit-transition-duration: 1.5s;
     -moz-transition-duration: 1.5s;
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
-    transition-property: all;
-    
+    transition-property: all;  
 }
 
 #logoNavContainer {
@@ -78,7 +77,7 @@ h1 {
 #nav {
     background: #035;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 5px auto;
     width: 40%;
 }
 
@@ -96,6 +95,7 @@ h1 {
 
 #nav a {
     color: #fff;    
+    font-weight: normal;
     font-family: 'nowregular', sans-serif;
     text-decoration: none;
 }
@@ -107,28 +107,28 @@ h1 {
 
 
 /*** CONTENT DIV and TAB CONTENT ***/
-.content-hide {
-    visibility: hidden;
+#content-div {
     bottom: 50px;
     margin: 0 8% 0 27%;
-    position: absolute;
+    position: absolute;    
     width: 65%;
+}
+
+.content-hide {
+    height: 0;
+    opacity: 0;
+    visibility: hidden; 
 }
 
 .content-view {
     background: #fff;
-    border-radius: 5px;
-    bottom: 50px;
     box-shadow: 0 0 15px rgba(0, 51, 85, .1);
     height: 110%;
-    margin: 0 8% 0 27%;
-    position: absolute;
-    visibility: visible;
-    width: 65%;
+    visibility: visible; 
 }
 
 .tabContent {
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 .no-display {
