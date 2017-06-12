@@ -1,0 +1,202 @@
+/*** FONTS ***/
+@font-face {
+    font-family: 'nowregular';
+    src: url('../font/now-reg-webfont.woff2') format('woff2'),
+         url('../font/now-reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nowbold';
+    src: url('../font/now-bold-webfont.woff2') format('woff2'),
+         url('../font/now-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'anataliacaps';
+    src: url('../font/anatalia_caps-webfont.woff2') format('woff2'),
+         url('../font/anatalia_caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'anataliascript';
+    src: url('../font/anatalia_script-webfont.woff2') format('woff2'),
+         url('../font/anatalia_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*** GLOBALS ***/
+body {
+    background: #f9f9f9;
+    font-family: 'nowregular', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+p {
+    color: #035;
+    font-family: 'nowregular', sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    color: #035;
+    font-family: 'nowregular', sans-serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.ani {
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: all;  
+}
+
+#logoNavContainer {
+    margin-top: 2%;
+}
+
+#logo {
+    width: 100%;
+}
+
+/*** NAV bar ***/
+#nav {
+    background: #035;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 96%;
+    z-index: 999;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#nav li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 7px 5px 8px;
+}
+
+#navWork {
+    background: #002842;
+    border-radius: 5px;
+}
+
+#navWork li {
+    padding: 8px 0 10px;
+    margin: 
+    width: 100%;
+}
+
+#nav a {
+    color: #fff;    
+    font-weight: normal;
+    font-family: 'nowregular', sans-serif;
+    text-decoration: none;
+}
+
+#nav a:hover,
+#nav a:active {
+    color: #fab;
+}
+
+a#linkWork,
+a#linkWork:hover,
+a#linkWork:active {
+    color: #fff;
+}
+
+/*** CONTENT DIV and TAB CONTENT ***/
+#content-div {
+    top: 35%;
+    margin: 0 5%;
+    position: absolute;    
+    width: 90%;
+    z-index: -1;
+}
+
+.content-hide {
+    height: 0;
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.content-view {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 51, 85, .1);
+    min-height: 80%;
+    visibility: visible; 
+}
+
+.tabContent {
+    padding: 20% 5%;
+}
+
+.no-display {
+    display: none;
+}
+
+.yes-display {
+    display: inline-block;
+}
+
+@media (min-width: 760px) { 
+
+    #logoNavContainer {
+        margin-top: 10%;
+    }
+
+    #logo {
+        width: auto;
+    }
+
+    #nav {
+        background: #035;
+        border-radius: 5px;
+        margin: 5px auto;
+        width: 40%;
+    }
+
+    #nav ul {
+        width: auto;
+    }
+
+    #content-div {
+        bottom: 50px;
+        margin: 0 8% 0 27%;
+        position: absolute;
+        top: auto;    
+        width: 65%;
+    }
+
+    .content-view {
+        height: 110%;
+    }
+
+    .tabContent {
+        padding: 18% 0 0 0;
+    }
+
+}
